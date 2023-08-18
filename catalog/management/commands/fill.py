@@ -12,13 +12,13 @@ class Command(BaseCommand):
 
     @staticmethod
     def json_read_categories():
-        with open(Command.category_file, 'r', encoding='utf-8') as f:
+        with open(Command.category_file, 'r', encoding='windows-1251') as f:
             categories_list = json.load(f)
         return categories_list
 
     @staticmethod
     def json_read_products():
-        with open(Command.product_file, 'r', encoding='utf-8') as f:
+        with open(Command.product_file, 'r', encoding='windows-1251') as f:
             product_list = json.load(f)
         return product_list
 

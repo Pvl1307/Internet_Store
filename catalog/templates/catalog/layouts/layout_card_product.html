@@ -1,0 +1,18 @@
+{% load catalog_tags %}
+
+<div class="col-3">
+    <div class="card mb-4 box-shadow">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ product.name_of_product|slice:20 }}</h4>
+        </div>
+        <div class="card-body">
+            <img class="card-img-top" src="{{ product.product_img|mymedia }}" alt="product">
+            <h1 class="card-title pricing-card-title">{{ product.price_of_product }} rub</h1>
+
+            <p>{{ product.description_of_product|slice:100 }}...</p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Купить</button>
+            <a href="{% url 'catalog:info_about_product' product.pk %}" class="btn btn-lg btn-block btn-outline-primary">Читать
+                далее</a>
+        </div>
+    </div>
+</div>

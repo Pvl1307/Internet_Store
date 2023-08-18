@@ -1,0 +1,327 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 89,
+    "fields": {
+      "name_of_product": "Samsung Galaxy S21",
+      "description_of_product": "Ультрасовременный смартфон Samsung Galaxy S21 с производительным процессором, улучшенной камерой и высоким разрешением экрана. Прекрасный выбор для фотографий, видеозаписей и повседневных задач.",
+      "product_img": "product/Samsung_Galaxy_S21.jpg",
+      "category_of_product": 87,
+      "price_of_product": 69990.0,
+      "date_of_creation": "2023-08-18T22:54:16Z",
+      "date_of_last_change": "2023-08-18T22:54:17Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 90,
+    "fields": {
+      "name_of_product": "iPhone 13",
+      "description_of_product": "Легендарный iPhone 13 с невероятно быстрым процессором, инновационной камерой и стильным дизайном. Откройте для себя мир Apple с новыми возможностями.",
+      "product_img": "product/iPhone_13.jpg",
+      "category_of_product": 87,
+      "price_of_product": 79990.0,
+      "date_of_creation": "2023-08-18T22:54:57Z",
+      "date_of_last_change": "2023-08-18T22:54:58Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 91,
+    "fields": {
+      "name_of_product": "Xiaomi Mi 11t",
+      "description_of_product": "Мощный и стильный смартфон Xiaomi Mi 11t с великолепной камерой, ярким дисплеем и продвинутыми функциями. Подходит для геймеров, любителей фотографий и активных пользователей.",
+      "product_img": "product/Xiaomi_Mi_11t.png",
+      "category_of_product": 87,
+      "price_of_product": 42990.0,
+      "date_of_creation": "2023-08-18T22:55:29Z",
+      "date_of_last_change": "2023-08-18T22:55:30Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 92,
+    "fields": {
+      "name_of_product": "Google Pixel 6",
+      "description_of_product": "Интеллектуальный смартфон Google Pixel 6 с фокусом на фотографии, мощным процессором и операционной системой Android. Оптимальное решение для любителей экосистемы Google.",
+      "product_img": "product/Google_Pixel_6.jpg",
+      "category_of_product": 87,
+      "price_of_product": 54990.0,
+      "date_of_creation": "2023-08-18T22:55:55Z",
+      "date_of_last_change": "2023-08-18T22:55:56Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 93,
+    "fields": {
+      "name_of_product": "OnePlus 9",
+      "description_of_product": "Смартфон OnePlus 9 с камерой, разработанной совместно с Hasselblad, быстрым зарядом и элегантным дизайном. Отличный выбор для тех, кто ценит сбалансированность и производительность.",
+      "product_img": "product/OnePlus_9.jpg",
+      "category_of_product": 87,
+      "price_of_product": 49990.0,
+      "date_of_creation": "2023-08-18T22:56:21Z",
+      "date_of_last_change": "2023-08-18T22:56:22Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 94,
+    "fields": {
+      "name_of_product": "Dell XPS 13",
+      "description_of_product": "Ноутбук Dell XPS 13 с ультратонким корпусом, высоким разрешением экрана и мощным процессором. Идеальное решение для бизнеса и развлечений.",
+      "product_img": "product/Dell_XPS_13.jpg",
+      "category_of_product": 88,
+      "price_of_product": 89990.0,
+      "date_of_creation": "2023-08-18T23:03:21Z",
+      "date_of_last_change": "2023-08-18T23:03:22Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 95,
+    "fields": {
+      "name_of_product": "ASUS ROG Zephyrus G14",
+      "description_of_product": "Игровой ноутбук ASUS ROG Zephyrus G14 с производительной видеокартой, высокой частотой обновления экрана и стильным дизайном. Откройте для себя мир геймерских возможностей.",
+      "product_img": "product/ASUS_ROG_Zephyrus_G14.jpg",
+      "category_of_product": 88,
+      "price_of_product": 129990.0,
+      "date_of_creation": "2023-08-18T23:03:46Z",
+      "date_of_last_change": "2023-08-18T23:03:47Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 96,
+    "fields": {
+      "name_of_product": "HP Envy x360",
+      "description_of_product": "Многофункциональный ноутбук HP Envy x360 с возможностью превращения в планшет, ярким дисплеем и стилевым дизайном. Отличное решение для творчества и учебы.",
+      "product_img": "product/HP_Envy_x360.jpg",
+      "category_of_product": 88,
+      "price_of_product": 69990.0,
+      "date_of_creation": "2023-08-18T23:04:08Z",
+      "date_of_last_change": "2023-08-18T23:04:08Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 97,
+    "fields": {
+      "name_of_product": "Lenovo ThinkPad X1 Carbon",
+      "description_of_product": "Профессиональный ноутбук Lenovo ThinkPad X1 Carbon с надежным корпусом, высокой надежностью и продвинутыми функциями безопасности. Подходит для бизнеса и работы.",
+      "product_img": "product/Lenovo_ThinkPad_X1_Carbon.jpeg",
+      "category_of_product": 88,
+      "price_of_product": 115990.0,
+      "date_of_creation": "2023-08-18T23:04:30Z",
+      "date_of_last_change": "2023-08-18T23:04:31Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 98,
+    "fields": {
+      "name_of_product": "Acer Swift 3",
+      "description_of_product": "Ноутбук Acer Swift 3 с хорошим соотношением цена-качество, стильным дизайном и хорошей производительностью. Подходит для повседневных задач и развлечений.",
+      "product_img": "product/Acer_Swift_3.jpg",
+      "category_of_product": 88,
+      "price_of_product": 44990.0,
+      "date_of_creation": "2023-08-18T23:04:50Z",
+      "date_of_last_change": "2023-08-18T23:04:51Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 99,
+    "fields": {
+      "name_of_product": "Samsung Galaxy Tab S7",
+      "description_of_product": "Планшет Samsung Galaxy Tab S7 с высоким разрешением экрана, поддержкой стилуса S Pen и продвинутой производительностью. Отлично подходит для рисования, работы и развлечений.",
+      "product_img": "product/Samsung_Galaxy_Tab_S7.jpg",
+      "category_of_product": 89,
+      "price_of_product": 57990.0,
+      "date_of_creation": "2023-08-18T23:08:26Z",
+      "date_of_last_change": "2023-08-18T23:08:27Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 100,
+    "fields": {
+      "name_of_product": "Apple iPad Pro",
+      "description_of_product": "Планшет Apple iPad Pro с производительным процессором M1, Retina-дисплеем и множеством приложений для творчества и работы.",
+      "product_img": "product/Apple_iPad_Pro.jpg",
+      "category_of_product": 89,
+      "price_of_product": 72990.0,
+      "date_of_creation": "2023-08-18T23:08:51Z",
+      "date_of_last_change": "2023-08-18T23:08:52Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 101,
+    "fields": {
+      "name_of_product": "Huawei MatePad Pro",
+      "description_of_product": "Планшет Huawei MatePad Pro с элегантным дизайном, ярким дисплеем и мощным процессором. Подходит для развлечений и работы в движении.",
+      "product_img": "product/Huawei_MatePad_Pro.jpg",
+      "category_of_product": 89,
+      "price_of_product": 45990.0,
+      "date_of_creation": "2023-08-18T23:09:14Z",
+      "date_of_last_change": "2023-08-18T23:09:15Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 102,
+    "fields": {
+      "name_of_product": "Lenovo Tab P11",
+      "description_of_product": "Планшет Lenovo Tab P11 с длительным временем автономной работы и встроенной сенсорной панелью. Практичное решение для повседневных задач.",
+      "product_img": "product/Lenovo_Tab_P11.jpg",
+      "category_of_product": 89,
+      "price_of_product": 22990.0,
+      "date_of_creation": "2023-08-18T23:10:20Z",
+      "date_of_last_change": "2023-08-18T23:10:21Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 103,
+    "fields": {
+      "name_of_product": "Microsoft Surface Go 3",
+      "description_of_product": "Компактный и легкий планшет Microsoft Surface Go 3 с поддержкой стилуса Surface Pen и мощным процессором. Подходит для творчества и обучения.",
+      "product_img": "product/Microsoft_Surface_Go_3.jpg",
+      "category_of_product": 89,
+      "price_of_product": 34990.0,
+      "date_of_creation": "2023-08-18T23:10:44Z",
+      "date_of_last_change": "2023-08-18T23:10:45Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 104,
+    "fields": {
+      "name_of_product": "Samsung Galaxy Watch 4",
+      "description_of_product": "Умные часы Galaxy Watch 4 с функцией измерения здоровья и стильным дизайном. Отличный спутник для активного образа жизни.",
+      "product_img": "product/Samsung_Galaxy_Watch_4.jpg",
+      "category_of_product": 90,
+      "price_of_product": 21990.0,
+      "date_of_creation": "2023-08-18T23:13:00Z",
+      "date_of_last_change": "2023-08-18T23:13:01Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 105,
+    "fields": {
+      "name_of_product": "Apple Watch SE",
+      "description_of_product": "Умные часы Apple Watch SE с множеством функций, стильным дизайном и оптимальной ценой. Отслеживайте здоровье и оставайтесь на связи с комфортом.",
+      "product_img": "product/Apple_Watch_SE.jpeg",
+      "category_of_product": 90,
+      "price_of_product": 19990.0,
+      "date_of_creation": "2023-08-18T23:13:23Z",
+      "date_of_last_change": "2023-08-18T23:13:24Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 106,
+    "fields": {
+      "name_of_product": "Garmin Forerunner 745",
+      "description_of_product": "Умные часы Garmin Forerunner 745 для спортсменов с расширенными функциями отслеживания тренировок и долгим временем автономной работы. Отличный выбор для фитнеса.",
+      "product_img": "product/Garmin_Forerunner_745.jpg",
+      "category_of_product": 90,
+      "price_of_product": 31990.0,
+      "date_of_creation": "2023-08-18T23:13:47Z",
+      "date_of_last_change": "2023-08-18T23:13:48Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 107,
+    "fields": {
+      "name_of_product": "Fitbit Versa 3",
+      "description_of_product": "Умные часы Fitbit Versa 3 с функцией измерения пульса, отслеживания сна и поддержкой голосового ассистента. Стильный аксессуар для активного образа жизни.",
+      "product_img": "product/Fitbit_Versa_3.jpg",
+      "category_of_product": 90,
+      "price_of_product": 14990.0,
+      "date_of_creation": "2023-08-18T23:14:12Z",
+      "date_of_last_change": "2023-08-18T23:14:14Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 108,
+    "fields": {
+      "name_of_product": "Huawei Watch Fit",
+      "description_of_product": "Умные часы Huawei Watch Fit с большим цветным дисплеем, множеством тренировочных режимов и легким дизайном. Отслеживайте физическую активность с удовольствием.",
+      "product_img": "product/Huawei_Watch_Fit.jpg",
+      "category_of_product": 90,
+      "price_of_product": 7990.0,
+      "date_of_creation": "2023-08-18T23:14:39Z",
+      "date_of_last_change": "2023-08-18T23:14:40Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 109,
+    "fields": {
+      "name_of_product": "Беспроводные наушники Apple AirPods Pro",
+      "description_of_product": "Беспроводные наушники Apple AirPods Pro с активным шумоподавлением и качественным звуком. Отличное дополнение к вашему смартфону или планшету.",
+      "product_img": "product/Apple_AirPods_Pro.jpg",
+      "category_of_product": 91,
+      "price_of_product": 18990.0,
+      "date_of_creation": "2023-08-18T23:19:04Z",
+      "date_of_last_change": "2023-08-18T23:19:05Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 110,
+    "fields": {
+      "name_of_product": "Стилус Samsung S Pen",
+      "description_of_product": "Стилус Samsung S Pen с точной подачей и эргономичным дизайном. Подходит для использования с планшетами и смартфонами Samsung Galaxy.",
+      "product_img": "product/Стилус_Samsung_S_Pen.jpg",
+      "category_of_product": 91,
+      "price_of_product": 3490.0,
+      "date_of_creation": "2023-08-18T23:19:24Z",
+      "date_of_last_change": "2023-08-18T23:19:25Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 111,
+    "fields": {
+      "name_of_product": "Зарядное устройство Anker PowerPort",
+      "description_of_product": "Зарядное устройство Anker PowerPort с множеством портов для одновременной зарядки устройств. Подходит для путешествий и повседневного использования.",
+      "product_img": "product/Зарядное_устройство_Anker_PowerPort.jpg",
+      "category_of_product": 91,
+      "price_of_product": 1290.0,
+      "date_of_creation": "2023-08-18T23:19:50Z",
+      "date_of_last_change": "2023-08-18T23:19:52Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 112,
+    "fields": {
+      "name_of_product": "Защитный чехол Spigen Tough Armor",
+      "description_of_product": "Защитный чехол Spigen Tough Armor для смартфонов с прочной конструкцией и стильным дизайном. Обеспечивает надежную защиту от ударов и царапин.",
+      "product_img": "product/Защитный_чехол_Spigen_Tough_Armor.jpg",
+      "category_of_product": 91,
+      "price_of_product": 1590.0,
+      "date_of_creation": "2023-08-18T23:20:10Z",
+      "date_of_last_change": "2023-08-18T23:20:11Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 113,
+    "fields": {
+      "name_of_product": "Беспроводная зарядка Belkin Boost Up",
+      "description_of_product": "Беспроводная зарядка Belkin Boost Up для смартфонов и других устройств с поддержкой Qi. Удобный способ зарядки без проводов и беспокойств.",
+      "product_img": "product/Беспроводная_зарядка_Belkin_Boost_Up.jpeg",
+      "category_of_product": 91,
+      "price_of_product": 2490.0,
+      "date_of_creation": "2023-08-18T23:20:28Z",
+      "date_of_last_change": "2023-08-18T23:20:29Z"
+    }
+  }
+]
