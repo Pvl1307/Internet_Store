@@ -6,7 +6,7 @@
             <h4 class="my-0 font-weight-normal">{{ product.name_of_product|slice:20 }}</h4>
         </div>
         <div class="card-body">
-            <img class="card-img-top" src="{{ product.product_img|mymedia }}" alt="product">
+            <img class="img-thumbnail" src="{{ product.product_img|mymedia }}" style="height:150px" alt="product">
             <h1 class="card-title pricing-card-title">{{ product.price_of_product }} rub</h1>
 
             <p>{{ product.description_of_product|slice:100 }}...</p>

@@ -1,0 +1,35 @@
+{% extends 'catalog/layouts/layout_base.html' %}
+{% load weblog_tags %}
+
+
+{% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Skystore</h1>
+    <p class="lead">Skystore - лучший магазин техники</p>
+</div>
+
+<div class="container">
+    <div class="row featurette box-shadow">
+        <div class="col-md-7 text-center">
+            <h4 class="my-0 font-weight-normal">{{ object.title }} ({{ object.slug }})</h4>
+            <h4></h4>
+            <p>{{ object.text }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="card-img-top" src="{{ object.blog_img|mymedia }}" alt="blog-preview">
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <p>Дата создания: {{ object.date_of_creation }}</p>
+            </div>
+            <div class="col-md-6">
+                <p>Просмотры: {{ object.count_of_views }}</p>
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+</div>
