@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, View
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, View, CreateView
 
-from catalog.models import Product, Category
+from catalog.forms import ProductForm, VersionForm
+from catalog.models import Product, Category, Version
 
 
 class HomeListView(ListView):
@@ -45,9 +47,27 @@ class ProductListView(ListView):
 
         category_item = Category.objects.get(pk=self.kwargs['pk'])
         context_data['title'] = category_item.name_of_category
+
+        for product in context_data['products']:
+            version = product.version_set.first()
+            product.version = version
+
         return context_data
 
 
 class ProductDetailView(DetailView):
     model = Product
     template_name = 'catalog/info_about_product.html'
+    context_object_name = 'product'
+
+
+class ProductCreateView(CreateView):
+    model = Product
+    form_class = ProductForm
+    success_url = reverse_lazy('catalog:home')
+
+
+class VersionCreateView(CreateView):
+    model = Version
+    form_class = VersionForm
+    success_url = reverse_lazy('catalog:home')

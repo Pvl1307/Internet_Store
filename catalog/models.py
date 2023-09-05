@@ -25,10 +25,24 @@ class Product(models.Model):
     date_of_last_change = models.DateTimeField(verbose_name='Последнее изменение', **NULLABLE)
 
     def __str__(self):
-        return (f'{self.name_of_product}: {self.description_of_product} '
-                f'Категория: {self.category_of_product} '
+        return (f'{self.name_of_product}.'
+                f'Категория: {self.category_of_product}. '
                 f'Цена: {self.price_of_product}')
 
     class Meta:
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
+
+
+class Version(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Продукт')
+    version_number = models.CharField(max_length=50, verbose_name='Номер версии', **NULLABLE)
+    version_name = models.CharField(max_length=50, verbose_name='Название версии')
+    is_active = models.BooleanField(verbose_name='В наличии', default=False)
+
+    def __str__(self):
+        return f'{self.version_number}/{self.version_name}'
+
+    class Meta:
+        verbose_name = 'Версия'
+        verbose_name_plural = 'Версии'

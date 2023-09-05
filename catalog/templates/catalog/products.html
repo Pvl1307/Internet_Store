@@ -1,19 +1,20 @@
 {% extends 'catalog/layouts/layout_base.html' %}
 
 {% block content %}
-
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Skystore - {{ title }}</h1>
     <p class="lead">Skystore - лучший магазин техники</p>
 </div>
 
 <div class="container">
+    <div class="col-9 mb-5" style="margin-left: 50px;">
+        <a class="btn btn-outline-primary" href="{% url 'catalog:create_product' %}">Добавить продукт</a>
+        <a class="btn btn-outline-primary" href="{% url 'catalog:create_version' %}">Добавить версию</a>
+    </div>
     <div class="row text-center">
         {% for product in products %}
         {% include 'catalog/layouts/layout_card_product.html' %}
         {% endfor %}
     </div>
-
-
-    {% endblock %}
 </div>
+{% endblock %}
