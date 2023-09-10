@@ -1,12 +1,14 @@
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from pytils.translit import slugify
+
+from weblog.forms import WeBlogForm
 from weblog.models import WeBlog
 
 
 class WeBlogCreateView(CreateView):
     model = WeBlog
-    fields = ('title', 'text', 'blog_img', 'is_published', 'date_of_creation')
+    form_class = WeBlogForm
     success_url = reverse_lazy('weblog:list')
 
     def form_valid(self, form):
@@ -44,7 +46,7 @@ class WeBlogDetailView(DetailView):
 
 class WeBlogUpdateView(UpdateView):
     model = WeBlog
-    fields = ('title', 'text', 'blog_img', 'date_of_creation')
+    form_class = WeBlogForm
 
     def form_valid(self, form):
         if form.is_valid():

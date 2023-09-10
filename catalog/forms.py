@@ -14,6 +14,7 @@ class ProductForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
+        exclude = ('user',)
 
     def clean_description_of_product(self):
         cleaned_data = self.cleaned_data['description_of_product']
@@ -32,6 +33,7 @@ class VersionForm(StyleFormMixin, forms.ModelForm):
         model = Version
         fields = '__all__'
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, user, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['is_active'].widget.attrs.update({'class': 'form-check-input'})
+        self.fields['product'].queryset = Product.objects.filter(user=user)

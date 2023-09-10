@@ -12,10 +12,15 @@
             <p>{{ product.description_of_product|slice:100 }}...</p>
 
             {% for version in product.version_set.all %}
-                {% if version.is_active %}
-                <p>Версия продукта: {{ version.version_number }}/{{ version.version_name }}</p>
-                {% endif %}
+            {% if version.is_active %}
+            <p>Версия продукта: {{ version.version_number }}/{{ version.version_name }}</p>
+            {% endif %}
             {% endfor %}
+
+            {% if product.user == request.user %}
+            <a href="{% url 'catalog:update_product' product.pk %}" class="btn btn-lg btn-block btn-outline-warning">Изменить
+                продукт</a>
+            {% endif %}
 
             <button type="button" class="btn btn-lg btn-block btn-outline-success">Купить</button>
             <a href="{% url 'catalog:info_about_product' product.pk %}"
