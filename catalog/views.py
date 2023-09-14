@@ -1,3 +1,6 @@
+from django.core.cache import cache
+
+from config import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import Http404
 from django.shortcuts import render
@@ -11,6 +14,20 @@ from catalog.models import Product, Category, Version
 class HomeListView(ListView):
     model = Category
     template_name = 'catalog/home.html'
+
+    def get_context_data(self, **kwargs):
+        context_data = super().get_context_data(**kwargs)
+        if settings.CACHE_ENABLED:
+            key = 'categories_list'
+            categories_list = cache.get(key)
+            if categories_list is None:
+                categories_list = self.model.objects.all()
+                cache.set(key, categories_list)
+        else:
+            categories_list = self.model.objects.all()
+
+        context_data['categories'] = categories_list
+        return context_data
 
 
 class ContactView(View):
