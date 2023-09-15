@@ -1,5 +1,6 @@
 from django.core.cache import cache
 
+from catalog.services import get_categories_list
 from config import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import Http404
@@ -17,14 +18,8 @@ class HomeListView(ListView):
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
-        if settings.CACHE_ENABLED:
-            key = 'categories_list'
-            categories_list = cache.get(key)
-            if categories_list is None:
-                categories_list = self.model.objects.all()
-                cache.set(key, categories_list)
-        else:
-            categories_list = self.model.objects.all()
+
+        categories_list = get_categories_list()
 
         context_data['categories'] = categories_list
         return context_data
